@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="278" height="70" viewBox="0 0 278 70">
+  <g id="logo" transform="translate(-20 21)">
+    <rect id="box" width="278" height="70" transform="translate(20 -21)" fill="none" opacity="0"/>
+    <text id="miracleStudio" transform="translate(20 36)" fill="#222" font-size="36" font-family="Poppins-Medium, Poppins" font-weight="500" letter-spacing="0.01em"><tspan x="0" y="0">miracle</tspan><tspan y="0" fill="#1fd2d9">S</tspan><tspan y="0">tudio</tspan></text>
+    <path id="home" d="M696.552,412.992v3.52h15.391l0-37.442-24.674-17.582-25.054,17.574v5.553h3.567v-3.737l21.474-15.06,21.122,15.052v32.121Z" transform="translate(-414.63 -382.489)" fill="#1fd2d9"/>
+  </g>
+</svg>

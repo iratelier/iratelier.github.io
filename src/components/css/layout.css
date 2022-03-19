@@ -1,0 +1,165 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+/* @import url(/src/resources/css/swiper-bundle.css); */
+
+/************************************************************************
+ * 파일명 : layout.css
+ * 설명 : 공통
+ * 작성자 : miraclestudio JMR
+ * 작성일 : 2022.03.15
+ * 최종수정일 : 2022.03.15
+************************************************************************/
+
+#wrap {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  /* background: #f2f2f2; */
+}
+#header .ui.menu {
+  margin: 1rem;
+}
+#header .ui.menu .item {
+  color: #fff;
+  padding: 1rem;
+  font-size: 0.938rem;
+  letter-spacing: -0.05rem;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+#header .ui.menu .item.active {
+  color: #1fd2d9;
+  text-decoration: underline;
+}
+#header .ui.menu .item:hover {
+  color: #1fd2d9;
+  text-decoration: underline;
+}
+#header .ui.menu .item.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#header .btn-prev-arrow {
+  display: inline-block;
+  padding: 12px;
+}
+#header .btn-prev-arrow span {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(/src/resources/image/common/-g-ico-back-bk.svg) no-repeat;
+  text-indent: -9999px;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+#header #menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 13px 14px;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+#header #menu .hamburger {
+  display: inline-block;
+  vertical-align: middle;
+}
+#header #menu span {
+  display: block;
+  overflow: hidden;
+  width: 20px;
+  height: 2px;
+  background: #222;
+  margin: 4px auto;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+#header #menu.active span {
+  background: #fff;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+#header #menu.active span:nth-child(1) {
+  transform: translateY(6px) rotate(225deg);
+  transition-delay: 0.1s;
+}
+#header #menu.active span:nth-child(2) {
+  opacity: 0;
+}
+#header #menu.active span:nth-child(3) {
+  transform: translateY(-6px) rotate(-225deg);
+  transition-delay: 0.1s;
+}
+#footer {
+  margin-top: 100px;
+  padding: 0 16px 80px;
+}
+#footer p.copyright {
+  text-align: center;
+}
+
+#container {
+  position: relative;
+}
+#container.has-fix-btn {
+  padding-bottom: 86px;
+}
+
+#container .container-wrap {
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+h2.txt-headline {
+  margin-bottom: 80px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.contact .contact-me {
+}
+
+/* sm */
+@media (min-width: 640px) {
+  /* #container .container-wrap {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  h2.txt-headline {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  } */
+}
+/* md */
+@media (min-width: 768px) {
+  /* #container .container-wrap {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  } */
+}
+
+/* lg */
+@media (min-width: 1024px) {
+}
+/* xl */
+@media (min-width: 1280px) {
+}

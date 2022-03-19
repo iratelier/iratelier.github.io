@@ -1,0 +1,1179 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta itemprop="name" content="KAKAOPAGE">
+    <meta itemprop="description"
+        content="카카오페이지는 세상 모든 이야기를 발굴하고 소개하며 매력적으로 재생산하여 새로운 콘텐츠 소비습관을 제시하는 종합 콘텐츠 플랫폼 서비스입니다.">
+    <meta itemprop="image" content="/sns/kakaopage2.jpg">
+    <meta property="fb:app_id" content="APP_ID">
+    <meta property="og:type" content="Website">
+    <meta property="og:title" content="KAKAOPAGE">
+    <meta property="og:url" content="/source/iframe/portfolio/kakaopage2.html">
+    <meta property="og:description"
+        content="카카오페이지는 세상 모든 이야기를 발굴하고 소개하며 매력적으로 재생산하여 새로운 콘텐츠 소비습관을 제시하는 종합 콘텐츠 플랫폼 서비스입니다.">
+    <meta property="og:image" content="/sns/kakaopage2.jpg">
+    <meta name="title" content="KAKAOPAGE">
+    <meta name="keywords"
+        content="PLUS-EX, PLUS X, PLUS UX/UI, UX, UI, GUI, KAKAOPAGE, 플러스엑스, 디자인, Website, Web Design, 카카오페이지">
+    <meta name="description" content="카카오페이지는 세상 모든 이야기를 발굴하고 소개하며 매력적으로 재생산하여 새로운 콘텐츠 소비습관을 제시하는 종합 콘텐츠 플랫폼 서비스입니다.">
+    <title>Plus X Creative Partner</title>
+    <!--[if (gte IE 6)&(lte IE 9)]>
+<script>
+window.location.replace("/update.html");
+</script>
+<![endif]-->
+    <script type="text/javascript" src="../js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="../js/lib/skrollr.min.js"></script>
+    <script type="text/javascript" src="../js/lib/wow.min.js"></script>
+    <script type="text/javascript" src="../js/lib/froogaloop2.min.js"></script>
+    <script type="text/javascript">
+        //SNS 공유
+        function sendSns(sns, url, txt) {
+            var o;
+            var _url = window.location;
+            var _tits = $('meta[itemprop=name]').attr("content");
+            var _txt = $('meta[itemprop=description]').attr("content");
+            var _img = $('meta[itemprop=image]').attr("content");
+            var _br = encodeURIComponent('\r\n');
+            switch (sns) {
+                case 'twitter':
+                    o = {
+                        method: 'popup',
+                        url: 'http://twitter.com/intent/tweet?text=' + _txt + '&url=' + _url
+                    };
+                    break;
+                case 'facebook':
+                    o = {
+                        method: 'popup',
+                        url: 'http://www.facebook.com/sharer/sharer.php?u=' + _url
+                    };
+                    break;
+                case 'google':
+                    o = {
+                        method: 'popup',
+                        url: 'https://plus.google.com/share?url=' + _url
+                    };
+                    break;
+                case 'linkedin':
+                    o = {
+                        method: 'popup',
+                        url: 'http://www.linkedin.com/shareArticle?mini=true&url=' + _url + '&summary=' + _txt + '&source=' + _img
+                    };
+                    break;
+                case 'pint':
+                    o = {
+                        method: 'popup',
+                        url: 'https://www.pinterest.com/pin/create/button/?url=' + _url + '&media=' + _img + '&description=' + _txt
+                    };
+                    break;
+                default:
+                    alert('지원하지 않는 SNS입니다.');
+                    return false;
+            }
+            switch (o.method) {
+                case 'popup':
+                    window.open(o.url);
+                    break;
+            }
+        }
+    </script>
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="../css/layer-index.css">
+    <link type="text/css" rel="stylesheet" href="../css/animate.css">
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        /* portfolio */
+        .portfolio {
+            position: relative;
+            width: 100%;
+            min-width: 1280px
+        }
+
+        /*고정_min-width값만 조정*/
+        /*kakaopage2 style*/
+        .kakao2_wrap {
+            overflow: hidden;
+            position: relative;
+            background: #181818
+        }
+
+        .kakao2_wrap .content {
+            width: 1085px;
+            margin: 0 auto
+        }
+
+        .kakao2_wrap .tit_wrap {
+            overflow: hidden;
+            width: 1085px;
+            margin: 0 auto;
+            padding: 0 5px
+        }
+
+        .kakao2_wrap .tit_wrap .index:after {
+            content: '';
+            display: block;
+            clear: both
+        }
+
+        .kakao2_wrap .tit_wrap .index img:first-child {
+            float: left
+        }
+
+        .kakao2_wrap .tit_wrap .index img:last-child {
+            float: right;
+            margin-right: -3px
+        }
+
+        .kakao2_wrap .tit_wrap .tit {
+            margin: 130px 0 148px
+        }
+
+        .kakao2_wrap .tit_wrap .tit h2 {
+            margin: 0 0 28px
+        }
+
+        .kakao2_wrap .tit_wrap .tit p {
+            color: rgba(255, 255, 255, .4);
+            font-family: nbgl;
+            font-size: 14px;
+            line-height: 28px
+        }
+
+        .kakao2_wrap .con_line {
+            width: 540px;
+            position: relative
+        }
+
+        .kakao2_wrap .con_line h3 {
+            position: relative;
+            margin: 50px 0 20px
+        }
+
+        .kakao2_wrap .con_line h3 span {
+            display: inline-block;
+            position: relative;
+            z-index: 20;
+            padding-right: 33px;
+            color: #fff;
+            font-size: 28px;
+            line-height: 41px
+        }
+
+        .kakao2_wrap .con_line h3:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 18px;
+            z-index: 10;
+            width: 100%;
+            height: 4px;
+            background: #ffd200
+        }
+
+        .kakao2_wrap .con_line p {
+            margin: 47px 0 0;
+            color: #787878;
+            font-family: nbgl;
+            font-size: 14px;
+            line-height: 28px
+        }
+
+        .kakao2_wrap .grid {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -540px;
+            width: 1080px;
+            height: 100%;
+            border: 1px solid rgba(125, 125, 125, .1);
+            border-top: 0;
+            margin-bottom: 0
+        }
+
+        .kakao2_wrap .grid:after {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 100%;
+            margin: 0 0 0 540px;
+            background: rgba(125, 125, 125, .1)
+        }
+
+        .kakao2_wrap .cover_wrap {
+            overflow: hidden;
+            background: #ffd200 url(../../resources/image/experience/detail/kakaopage2/bg_main.png) no-repeat center center;
+            background-size: auto 100%
+        }
+
+        .kakao2_wrap .cover_wrap .content {
+            position: relative;
+            margin: 0 auto;
+            border: 1px solid rgba(0, 0, 0, .08);
+            border-top: 0;
+            border-bottom: 0;
+            width: 1080px;
+            height: 1080px
+        }
+
+        .kakao2_wrap .cover_wrap .content:after {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 100%;
+            margin: 0 0 0 540px;
+            background: rgba(0, 0, 0, .08)
+        }
+
+        .kakao2_wrap .cover_wrap .content img {
+            position: absolute
+        }
+
+        .kakao2_wrap .cover_wrap .content img:first-child {
+            left: 50%;
+            top: 50%;
+            margin: -104px 0 0 -104px
+        }
+
+        .kakao2_wrap .cover_wrap .content img:nth-child(2) {
+            top: 35px;
+            left: -1px
+        }
+
+        .kakao2_wrap .cover_wrap .content img:nth-child(3) {
+            top: 0;
+            right: -1px
+        }
+
+        .kakao2_wrap .cover_wrap .content img:nth-child(4) {
+            left: 0;
+            bottom: 34px
+        }
+
+        .kakao2_wrap .cover_wrap .content img:last-child {
+            right: 0;
+            bottom: 34px
+        }
+
+        .kakao2_wrap .intro_wrap {
+            overflow: hidden;
+            position: relative;
+            z-index: 20
+        }
+
+        .kakao2_wrap .intro_wrap:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .85)
+        }
+
+        .kakao2_wrap .intro_wrap video {
+            vertical-align: top
+        }
+
+        .kakao2_wrap .intro_wrap .content {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 30;
+            width: 1080px;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%)
+        }
+
+        .kakao2_wrap .intro_wrap .content h2 {
+            margin: 32px 0 40px;
+            color: #fff;
+            font-size: 64px;
+            line-height: 100px;
+            font-family: nbgl
+        }
+
+        .kakao2_wrap .intro_wrap .content p {
+            color: #787878;
+            font-size: 14px;
+            line-height: 28px
+        }
+
+        .kakao2_wrap .over_wrap {
+            padding: 158px 0 95px
+        }
+
+        .kakao2_wrap .over_wrap .over_01 {
+            overflow: hidden;
+            width: 100%;
+            margin: 0 0 102px 50%;
+            padding-left: 2px
+        }
+
+        .kakao2_wrap .over_wrap .over_01 .con_line {
+            position: relative;
+            z-index: 20;
+            width: 537px;
+            margin: 0 0 28px;
+            color: #fff;
+            font-size: 14px;
+            line-height: 28px
+        }
+
+        .kakao2_wrap .over_wrap .over_01 .con_line p {
+            width: 435px
+        }
+
+        .kakao2_wrap .over_wrap .over_01 .con_line p:last-child {
+            margin-top: 30px
+        }
+
+        .kakao2_wrap .over_wrap .over_01 .con_line h3 span {
+            background: #171717
+        }
+
+        .kakao2_wrap .over_wrap .over_01 img:last-child {
+            position: relative;
+            z-index: 10;
+            margin-top: -210px
+        }
+
+        .kakao2_wrap .over_wrap .over_02 {
+            overflow: hidden
+        }
+
+        .kakao2_wrap .over_wrap .over_02 dl {
+            position: relative;
+            z-index: 20;
+            width: 1080px;
+            margin: 0 auto
+        }
+
+        .kakao2_wrap .over_wrap .over_02 dl dd {
+            margin: 52px 0 0;
+            color: #fff;
+            font-size: 42px;
+            line-height: 62px;
+            letter-spacing: -1px;
+            font-family: nbgl
+        }
+
+        .kakao2_wrap .over_wrap .over_02 dl dd strong {
+            display: inline-block;
+            margin: 0 5px 0 0px;
+            padding: 0 2px;
+            background: #ffd200;
+            color: #171717;
+        }
+
+        .kakao2_wrap .over_wrap .over_02 p {
+            width: 1080px;
+            margin: 70px auto 0;
+            color: #fff;
+            font-family: nbgl;
+            font-size: 14px;
+            line-height: 28px
+        }
+
+        .kakao2_wrap .over_wrap .over_02>img:last-child {
+            position: relative;
+            z-index: 10;
+            margin-top: -1290px
+        }
+
+        .kakao2_wrap .over_wrap .over_03 {
+            overflow: hidden;
+            position: relative;
+            margin: 138px 0 0;
+            width: 100%;
+            height: 774px;
+            background: url(../../resources/image/experience/detail/kakaopage2/img_map.png) center center no-repeat;
+            background-size: auto 774px
+        }
+
+        .kakao2_wrap .over_wrap .over_03 .corp {
+            position: absolute;
+            left: 50%;
+            top: 206px
+        }
+
+        .kakao2_wrap .over_wrap .over_03 .corp h3 {
+            margin: 18px 0 50px;
+            color: #fff;
+            font-size: 48px;
+            line-height: 70px;
+            font-family: nbgl
+        }
+
+        .kakao2_wrap .over_wrap .over_03 .corp p {
+            color: #fff;
+            font-family: nbgl;
+            font-size: 14px;
+            line-height: 28px
+        }
+
+        .kakao2_wrap .landing_wrap {
+            overflow: hidden;
+            position: relative;
+            padding: 155px 0 194px;
+            background: url(../../resources/image/experience/detail/kakaopage2/bg_landing.png) top center no-repeat;
+            background-size: cover
+        }
+
+        .kakao2_wrap .landing_wrap .tit_wrap {
+            position: relative;
+            z-index: 20
+        }
+
+        .kakao2_wrap .landing_wrap .video {
+            position: relative;
+            z-index: 20
+        }
+
+        .kakao2_wrap .landing_wrap .video video {
+            vertical-align: top
+        }
+
+        .kakao2_wrap .landing_wrap .con_line {
+            position: relative;
+            width: 1080px;
+            margin: 200px auto 0;
+            padding-left: 542px
+        }
+
+        .kakao2_wrap .landing_wrap .con_line h3 span {
+            background: #18181a
+        }
+
+        .kakao2_wrap .home_wrap {
+            overflow: hidden;
+            background: #000;
+            padding: 202px 0 0
+        }
+
+        .kakao2_wrap .home_wrap .content {
+            position: relative;
+            z-index: 20;
+            width: 1280px
+        }
+
+        .kakao2_wrap .home_wrap .content .tit_wrap .tit {
+            margin: 138px 0 100px
+        }
+
+        .kakao2_wrap .home_wrap .content .tit_wrap .tit h2 {
+            margin-bottom: 44px
+        }
+
+        .kakao2_wrap .home_wrap .content>img {
+            margin: -59px 0 -490px -50px
+        }
+
+        .kakao2_wrap .home_wrap .flow {
+            padding: 340px 0 0;
+            background: #181818
+        }
+
+        .kakao2_wrap .home_wrap .flow:after {
+            content: '';
+            display: block;
+            clear: both
+        }
+
+        .kakao2_wrap .home_wrap .flow .con_line {
+            position: relative;
+            width: 538px;
+            padding-left: 2px;
+            margin: 152px 0 0 50%
+        }
+
+        .kakao2_wrap .home_wrap .flow .con_line h3 span {
+            background: #171717
+        }
+
+        .kakao2_wrap .show_wrap {
+            padding: 614px 0 0
+        }
+
+        .kakao2_wrap .show_wrap .tit_wrap {
+            position: relative;
+            z-index: 30
+        }
+
+        .kakao2_wrap .show_wrap .screen {
+            position: relative;
+            z-index: 20
+        }
+
+        .kakao2_wrap .show_wrap .screen .screen_01 {
+            margin: 0 auto 200px
+        }
+
+        .kakao2_wrap .show_wrap .screen .screen_01>img:first-child {
+            display: block;
+            margin: -908px auto 0
+        }
+
+        .kakao2_wrap .show_wrap .screen .screen_01 div {
+            overflow: hidden;
+            background: url(../../resources/image/experience/detail/kakaopage2/bg_showroom.png) 800px 8px no-repeat;
+            text-align: center
+        }
+
+        .kakao2_wrap .show_wrap .screen .screen_02 .small_tit {
+            width: 1085px;
+            margin: 0 auto 88px
+        }
+
+        .kakao2_wrap .show_wrap .screen .screen_02 .small_tit img:last-child {
+            float: right;
+            margin-right: 5px
+        }
+
+        .kakao2_wrap .show_wrap .screen .screen_02 .page_mr {
+            margin-right: -124px
+        }
+
+        .kakao2_wrap .show_wrap .screen .screen_02 .page_mr .page {
+            display: block;
+            margin: 0 auto
+        }
+
+        .kakao2_wrap .plat_wrap .con_top {
+            padding: 250px 0 451px;
+            background: #ffd200 url(../../resources/image/experience/detail/kakaopage2/bg_color.png) center 0 no-repeat;
+            background-size: 1920px 1288px
+        }
+
+        .kakao2_wrap .plat_wrap .con_top .tit_wrap .tit {
+            margin-bottom: 220px
+        }
+
+        .kakao2_wrap .plat_wrap .con_top .tit_wrap .tit h2 {
+            margin-bottom: 50px
+        }
+
+        .kakao2_wrap .plat_wrap .con_top .tit_wrap .tit p {
+            color: #171717
+        }
+
+        .kakao2_wrap .plat_wrap .boundary {
+            position: relative;
+            height: 328px
+        }
+
+        .kakao2_wrap .plat_wrap .boundary:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            z-index: 10;
+            width: 50%;
+            height: 68px;
+            margin-top: -230px;
+            background: #181818
+        }
+
+        .kakao2_wrap .plat_wrap .boundary img {
+            display: block;
+            position: absolute;
+            left: 50%;
+            margin-left: -655px;
+            top: -422px;
+            z-index: 20;
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.5) 60px 60px 120px
+        }
+
+        .kakao2_wrap .plat_wrap .screen_list {
+            position: relative;
+            margin-top: 100px
+        }
+
+        .kakao2_wrap .plat_wrap .screen_list ul:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .kakao2_wrap .plat_wrap .screen_list ul li:first-child {
+            float: right;
+            margin: 0 0 -150px
+        }
+
+        .kakao2_wrap .plat_wrap .screen_list ul li:last-child {
+            float: left
+        }
+
+        .kakao2_wrap .m_wrap {
+            background: #fff
+        }
+
+        .kakao2_wrap .m_wrap .con_top {
+            padding: 155px 0 335px;
+            background: #181818
+        }
+
+        .kakao2_wrap .m_wrap .mobile_con {
+            position: relative
+        }
+
+        .kakao2_wrap .m_wrap .mobile_con .boundary {
+            position: relative;
+            height: 458px
+        }
+
+        .kakao2_wrap .m_wrap .mobile_con .boundary img {
+            display: block;
+            position: absolute;
+            top: -332px;
+            left: 50%;
+            margin-left: -195px;
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.3) 40px 40px 80px
+        }
+
+        .kakao2_wrap .m_wrap .mobile_con .m_list h4 {
+            margin: 0 0 50px
+        }
+
+        .kakao2_wrap .m_wrap .mobile_con .m_list {
+            position: relative;
+            height: 3450px
+        }
+
+        .kakao2_wrap .m_wrap .mobile_con .m_list ul {
+            position: absolute;
+            top: 120px;
+            left: 50%;
+            width: 1455px;
+            margin-left: -730px
+        }
+
+        .kakao2_wrap .m_wrap .mobile_con .m_list ul li:first-child {
+            margin: -270px 0 0
+        }
+
+        .kakao2_wrap .m_wrap .mobile_con .m_list ul li>img {
+            box-shadow: rgba(0, 0, 0, 0.3) 40px 40px 80px;
+            border-radius: 30px;
+        }
+
+        .kakao2_wrap .m_wrap .mobile_con .m_list ul li h4 img {
+            margin: 0
+        }
+
+        .kakao2_wrap .m_wrap .mobile_con .m_list ul li:nth-child(2) {
+            margin: -355px 0 0;
+            text-align: right
+        }
+
+        .kakao2_wrap .m_wrap .mobile_con .m_list ul li:nth-child(2) img:last-child {
+            margin-left: 137px
+        }
+
+        .kakao2_wrap .m_wrap .mobile_con .m_list ul li: {
+            margin-right: 146px
+        }
+
+        .kakao2_wrap .m_wrap .mobile_con .m_list ul li:last-child {
+            position: relative;
+            width: 1080px;
+            height: 2048px;
+            margin: 200px auto 0
+        }
+
+        .kakao2_wrap .m_wrap .mobile_con .m_list ul li:last-child h4 {
+            display: inline-block
+        }
+
+        .kakao2_wrap .m_wrap .mobile_con .m_list ul li:last-child h4:first-child {
+            margin: 477px 98px 0 3px;
+            vertical-align: top
+        }
+
+        .kakao2_wrap .m_wrap .mobile_con .m_list ul li:last-child>img {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            z-index: 20;
+            margin-left: -195px;
+            box-shadow: none
+        }
+
+        .kakao2_wrap .m_wrap .mobile_con .m_list ul li:last-child:after {
+            content: '';
+            display: block;
+            width: 360px;
+            height: 2048px;
+            border-radius: 30px;
+            position: absolute;
+            background: pink;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            z-index: 10;
+            margin-left: -180px;
+            box-shadow: rgba(0, 0, 0, 0.3) 40px 40px 80px
+        }
+
+        .kakao2_wrap .credit_wrap {
+            overflow: hidden;
+            position: relative;
+            z-index: 20;
+            padding: 250px 0 310px;
+            background: #181818
+        }
+
+        .kakao2_wrap .credit_wrap .screen {
+            position: relative;
+            margin: 0 auto 255px
+        }
+
+        .kakao2_wrap .credit_wrap .screen img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.5) 60px 60px 120px
+        }
+
+        .kakao2_wrap .credit_wrap .screen video {
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            margin-left: -640px;
+            border-radius: 22px;
+        }
+
+        .kakao2_wrap .credit_wrap .name {
+            width: 1080px;
+            margin: 0 auto
+        }
+
+        .kakao2_wrap .credit_wrap .name ul:after {
+            content: '';
+            display: block;
+            clear: both
+        }
+
+        .kakao2_wrap .credit_wrap .name ul li:first-child {
+            float: left
+        }
+
+        .kakao2_wrap .credit_wrap .name ul li:last-child {
+            float: right
+        }
+    </style>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-47162325-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- portfolio -->
+    <div class="portfolio" id="skrollr-body">
+        <!-- 컨텐츠 들어가는 곳 -->
+        <div class="kakao2_wrap">
+            <div class="grid"></div>
+            <div class="cover_wrap">
+                <div class="content">
+                    <img src="../../resources/image/experience/detail/kakaopage2/img_bi.png" width="268" height="268"
+                        alt="kakaopage bi">
+                    <img src="../../resources/image/experience/detail/kakaopage2/tit_cover_01.png" width="172"
+                        height="170"
+                        alt="Kakaopage PC Web. Mobile Web UI.UX experienceBrand website renewal projectto strengthen Kakaopage brandand enhance image.">
+                    <img src="../../resources/image/experience/detail/kakaopage2/img_award.png" width="90" height="90"
+                        alt="german design award">
+                    <img src="../../resources/image/experience/detail/kakaopage2/tit_01.png" width="124" height="37"
+                        alt="Kakaopage corp Plus X Creative partner">
+                    <img src="../../resources/image/experience/detail/kakaopage2/tit_02.png" width="79" height="31"
+                        alt="2019 February Launched">
+                </div>
+            </div>
+            <div class="intro_wrap" data-bottom-top="" data-top-bottom="">
+                <video loop muted playsinline="" width="100%" height="">
+                    <source src="../../resources/image/experience/detail/kakaopage2/mov_01.mp4" type="video/mp4">
+                </video>
+                <div class="content">
+                    <img src="../../resources/image/experience/detail/kakaopage2/tit_03.png" width="84" height="15"
+                        alt="kakao is">
+                    <h2>세상 모든 이야기를 발굴하고 소개하며<br>매력적으로 재생산하여 새로운 콘텐츠<br>소비습관을 제시하는 종합 콘텐츠<br>플랫폼 서비스입니다.</h2>
+                    <p>카카오페이지는 한국을 대표하는 콘텐츠 플랫폼 카카오페이지와 다음웹툰를 서비스하며 글로벌 콘텐츠 사업을 전개하고 있는 카카오의 콘텐츠 전문 자회사입니다.<br>콘텐츠 플랫폼
+                        브랜드 강화 및 기업 인지도 제고를 위해 2018년 8월 1일 '주식회사 카카오페이지'로 사명 및 CI를 변경하였습니다.</p>
+                </div>
+            </div>
+            <div class="over_wrap">
+                <div class="over_01">
+                    <img src="../../resources/image/experience/detail/kakaopage2/tit_04.png" width="97" height="13"
+                        alt="Project Overview">
+                    <div class="con_line">
+                        <h3><span>전 세계를 움직일<br>이야기의 힘<br>카카오페이지</span></h3>
+                        <p>카카오페이지는 카카오의 콘텐츠 자회사로서, 한국을 대표하는 종합 콘텐츠<br>플랫폼으로 더 나아가 다양한 파트너들과의 협업을 통해 기존에 없던 비즈니스모델을 제시하며
+                            한국 콘텐츠의 글로벌화를 이루어냈습니다.</p>
+                        <p>2018년 8월1일 포도트리에서 주식회사 카카오페이지로 사명이 변경되면서<br>기업이 지향하는 비전을 웹사이트를 통해 효과적으로 보여줄 수 있는<br>최적의 방안을
+                            제안하는 것이 이번 프로젝트의 핵심이라고 생각했습니다.</p>
+                    </div>
+                    <img src="../../resources/image/experience/detail/kakaopage2/img_mov_01.png" width="50%" height=""
+                        alt="카카오페이지 무드">
+                </div>
+                <div class="over_02">
+                    <dl>
+                        <dt><img src="../../resources/image/experience/detail/kakaopage2/tit_05.png" width="53"
+                                height="11" alt="Interview"></dt>
+                        <dd>
+                            <strong>입사 예정자들이나 잠재적인 투자자들</strong>에게<br>보여줄 기업 비전을 담고 싶다.
+                            <img src="../../resources/image/experience/detail/kakaopage2/txt_lucia.png" width="32"
+                                height="12" alt="lucia">
+                        </dd>
+                        <dd>
+                            <strong>기업 PT</strong>를 웹사이트로 대신하고 싶다.
+                            <img src="../../resources/image/experience/detail/kakaopage2/txt_joy.png" width="23"
+                                height="15" alt="joy">
+                        </dd>
+                        <dd>
+                            웹사이트는 <strong>기업가치를 높히기 위함</strong>이다.
+                            <img src="../../resources/image/experience/detail/kakaopage2/txt_joy.png" width="23"
+                                height="15" alt="joy">
+                        </dd>
+                        <dd>
+                            스토리 IP가 중심이 되는 <strong>글로벌서비스가</strong><br>넥스트 비즈니스다.
+                            <img src="../../resources/image/experience/detail/kakaopage2/txt_ryu.png" width="23"
+                                height="15" alt="ryu">
+                        </dd>
+                        <dd>
+                            <strong>새로운</strong>것들을 만들어 내는 것이 특징이다.
+                            <img src="../../resources/image/experience/detail/kakaopage2/txt_allen.png" width="31"
+                                height="13" alt="allen">
+                        </dd>
+                        <dd>
+                            성장하기 위해 <strong>상황에 맞는</strong>유저 커뮤니케이션을<br>하고 있다.
+                            <img src="../../resources/image/experience/detail/kakaopage2/txt_allen.png" width="31"
+                                height="13" alt="allen">
+                        </dd>
+                        <dd>
+                            부드러운 이미지가 아니라 <strong>흐름에 맞춰</strong>대응한다.
+                            <img src="../../resources/image/experience/detail/kakaopage2/txt_lucia.png" width="32"
+                                height="12" alt="lucia">
+                        </dd>
+                    </dl>
+                    <p>디자인 전략을 세우기 위한 임직원 인터뷰를 진행했습니다.<br>또한 차별점을 도출하기 위해 콘텐츠 서비스 기업들의 디자인 리서치 내용을 기반으로 핵심가치를 도출했습니다.
+                    </p>
+                    <img src="../../resources/image/experience/detail/kakaopage2/img_mov_02.png" width="50%" height=""
+                        alt="카카오페이지 무드">
+                </div>
+                <div class="over_03">
+                    <div class="corp">
+                        <img src="../../resources/image/experience/detail/kakaopage2/tit_06.png" width="143" height="13"
+                            alt="Brandsite Renewal Strategy">
+                        <h3><span>카카오페이지의<br>이야기를 듣다.</span></h3>
+                        <p>글로벌 진출에 따른 새로운 기업사이트는<br>입사 예정자들이나 잠재적인 투자자들에게<br>카카오페이지의 이야기를 해줄 수 있고<br>유저에게 상황과 흐름에 맞는
+                            이야기를<br>해줘야 한다고 생각했습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="landing_wrap">
+                <div class="tit_wrap">
+                    <div class="index">
+                        <img src="../../resources/image/experience/detail/kakaopage2/tit_flow_01.png" width="178"
+                            height="15" alt="Landing page Brand movie">
+                        <img src="../../resources/image/experience/detail/kakaopage2/tit_07.png" width="116" height="37"
+                            alt="Brandsite Renewal Strategy">
+                    </div>
+                    <div class="tit">
+                        <h2><img src="../../resources/image/experience/detail/kakaopage2/tit_landing.png" width="507"
+                                height="85" alt="Landing page"></h2>
+                        <p>브랜드 이야기를 적극적으로 알려야 하는 상황에서 브랜드 사이트의<br>첫 화면인 랜딩페이지를 효과적으로 활용하려 고민했습니다.</p>
+                    </div>
+                </div>
+                <div class="video" data-bottom-top="" data-top-bottom="">
+                    <video loop muted playsinline="" width="100%" height="">
+                        <source src="../../resources/image/experience/detail/kakaopage2/mov_02.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="con_line">
+                    <h3><span>영상으로 전달되는<br>브랜드 이야기</span></h3>
+                    <p>카카오페이지의 이야기를 전달하는 브랜드 소개 영상을<br>제작하고 랜딩페이지에서 보여줌으로 브랜드 이야기와<br>카카오페이지의 다양한 콘텐츠를 소개합니다.</p>
+                </div>
+            </div>
+            <div class="home_wrap">
+                <div class="content">
+                    <div class="tit_wrap">
+                        <div class="index">
+                            <img src="../../resources/image/experience/detail/kakaopage2/tit_flow_02.png" width="134"
+                                height="15" alt="home">
+                            <img src="../../resources/image/experience/detail/kakaopage2/tit_07.png" width="116"
+                                height="37" alt="Brandsite Renewal Strategy">
+                        </div>
+                        <div class="tit">
+                            <h2><img src="../../resources/image/experience/detail/kakaopage2/tit_home.png" width="221"
+                                    height="62" alt="home"></h2>
+                            <p>홈 화면은 카카오페이지의 주요 서비스들을 함축적으로<br>전달하고 스크롤 이벤트를 통해 자연스러운 콘텐츠<br>소비와 카테고리 이동을 유도합니다.</p>
+                        </div>
+                    </div>
+                    <img src="../../resources/image/experience/detail/kakaopage2/img_page_01.png" width="1478"
+                        height="6262" alt="page home">
+                </div>
+                <div class="flow">
+                    <div class="con_line">
+                        <h3><span>끊김 없는 자연스러운<br>이야기 흐름</span></h3>
+                        <p>카테고리별 최하단에는 다음페이지의 연결을 자연스럽게 유도하여<br>브랜드 이야기가 끊김 없이 소비되도록 유도합니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="show_wrap">
+                <div class="tit_wrap">
+                    <div class="index">
+                        <img src="../../resources/image/experience/detail/kakaopage2/tit_flow_03.png" width="193"
+                            height="12" alt="Contents Showroom">
+                        <img src="../../resources/image/experience/detail/kakaopage2/tit_07.png" width="116" height="37"
+                            alt="Brandsite Renewal Strategy">
+                    </div>
+                    <div class="tit">
+                        <h2><img src="../../resources/image/experience/detail/kakaopage2/tit_show.png" width="779"
+                                height="66" alt="showroom"></h2>
+                        <p>카카오페이지의 다양한 콘텐츠들을 소개하는 콘텐츠 쇼룸의 컨셉을 제안했습니다.<br>콘텐츠를 전시실 처럼 구성하여 리스트를 살펴 볼 수 있고 콘텐츠들의 상세 진입을
+                            통해<br>콘텐츠의 자세한 내용을 확인 할 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="screen">
+                    <div class="screen_01">
+                        <img src="../../resources/image/experience/detail/kakaopage2/img_visual.png" width="775"
+                            height="1200" alt="캐릭터">
+                        <div><img src="../../resources/image/experience/detail/kakaopage2/img_showroom.png" width="1480"
+                                height="844" alt=""></div>
+                    </div>
+                    <div class="screen_02">
+                        <div class="small_tit">
+                            <img src="../../resources/image/experience/detail/kakaopage2/tit_flow_04.png" width="407"
+                                height="16" alt="detile page">
+                            <img src="../../resources/image/experience/detail/kakaopage2/tit_07.png" width="116"
+                                height="37" alt="Brandsite Renewal Strategy">
+                        </div>
+                        <div class="page_mr">
+                            <img class="page" src="../../resources/image/experience/detail/kakaopage2/img_page_02.png"
+                                width="1328" height="2767" alt="showroom page">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="plat_wrap">
+                <div class="con_top">
+                    <div class="tit_wrap">
+                        <div class="index">
+                            <img src="../../resources/image/experience/detail/kakaopage2/tit_flow_05.png" width="182"
+                                height="12" alt="home">
+                            <img src="../../resources/image/experience/detail/kakaopage2/tit_09.png" width="116"
+                                height="38" alt="Brandsite Renewal Strategy">
+                        </div>
+                        <div class="tit">
+                            <h2><img src="../../resources/image/experience/detail/kakaopage2/tit_platform.png"
+                                    width="685" height="67" alt="Business Platform"></h2>
+                            <p>카카오페이지에서 서비스 되고 있는 콘텐츠 플래폼인 카카오페이지와<br>다음웹툰에 대해 소개합니다. 서비스의 성과, 특징, 비전등의 내용을 담아<br>기업의
+                                서비스 가치를 전달합니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="boundary">
+                    <img src="../../resources/image/experience/detail/kakaopage2/img_screen_01.png" width="1310"
+                        height="750" alt="카카오페이지 웹툰">
+                </div>
+                <div class="screen_list">
+                    <ul>
+                        <li><img src="../../resources/image/experience/detail/kakaopage2/img_screen_02.png" width="1668"
+                                height="676" alt="카카오페이지 웹툰"></li>
+                        <li><img src="../../resources/image/experience/detail/kakaopage2/img_screen_03.png" width="1747"
+                                height="676" alt="다음 웹툰"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="m_wrap">
+                <div class="con_top">
+                    <div class="tit_wrap">
+                        <div class="index">
+                            <img src="../../resources/image/experience/detail/kakaopage2/tit_flow_06.png" width="87"
+                                height="13" alt="Mobile Web UI">
+                            <img src="../../resources/image/experience/detail/kakaopage2/tit_07.png" width="116"
+                                height="37" alt="Brandsite Renewal Strategy">
+                        </div>
+                        <div class="tit">
+                            <h2><img src="../../resources/image/experience/detail/kakaopage2/tit_mobile.png" width="679"
+                                    height="85" alt="Integrated Mobile"></h2>
+                            <p>PC에서 활용된 그리드 시스템을 모바일에도 적용해<br>디바이스별 통합된 시각 경험을 제공합니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile_con">
+                    <div class="boundary">
+                        <img src="../../resources/image/experience/detail/kakaopage2/img_m_01.png" width="390"
+                            height="790" alt=" 모바일 홈">
+                    </div>
+                    <div class="m_list">
+                        <ul>
+                            <li>
+                                <h4><img src="../../resources/image/experience/detail/kakaopage2/tit_11.png" width="53"
+                                        height="18" alt="Mobile"></h4>
+                                <img src="../../resources/image/experience/detail/kakaopage2/img_m_02.png" width="390"
+                                    height="790" alt=" 모바일 홈">
+                            </li>
+                            <li>
+                                <h4><img src="../../resources/image/experience/detail/kakaopage2/tit_12.png" width="183"
+                                        height="19" alt="Business Platform"></h4>
+                                <img src="../../resources/image/experience/detail/kakaopage2/img_m_03.png" width="390"
+                                    height="790" alt=" 모바일 홈">
+                                <img src="../../resources/image/experience/detail/kakaopage2/img_m_04.png" width="390"
+                                    height="790" alt=" 모바일 홈">
+                            </li>
+                            <li>
+                                <h4><img src="../../resources/image/experience/detail/kakaopage2/tit_13.png" width="204"
+                                        height="19" alt="Contetns Showroom"></h4>
+                                <img src="../../resources/image/experience/detail/kakaopage2/img_m_05.png" width="390"
+                                    height="2048" alt=" 모바일 홈">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="credit_wrap" data-bottom-top="" data-top-bottom="">
+                <div class="screen">
+                    <img src="../../resources/image/experience/detail/kakaopage2/img_device.png" width="1310"
+                        height="750" alt="디바이스 배경">
+                    <video loop muted playsinline="" width="1280" height="720">
+                        <source src="../../resources/image/experience/detail/kakaopage2/mov_03.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="name">
+                    <ul>
+                        <li>
+                            <img src="../../resources/image/experience/detail/kakaopage2/txt_name_01.png" width="98"
+                                height="71" alt="이름">
+                        </li>
+                        <li>
+                            <img src="../../resources/image/experience/detail/kakaopage2/txt_name_02.png" width="538"
+                                height="136" alt="이름">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- //kakaopage -->
+        <div class="share_btn">
+            <div class="fb-like" data-href="/source/iframe/portfolio/kakaopage2.html" data-layout="button_count"
+                data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+            <a href="javascript:void(0);" class="shmore"><img src="../img/btn_exshare.png" width="92" height="22"
+                    alt="share"></a>
+        </div>
+    </div>
+    <!-- //portfolio -->
+    <div class="share_section">
+        <ul class="share_list">
+            <li><a href="javascript:void(0);" onClick="sendSns('facebook')" class="facebook"><em
+                        class="blind">페이스북</em></a></li>
+            <li><a href="javascript:void(0);" onClick="sendSns('twitter')" class="twitter"><em
+                        class="blind">트위터</em></a></li>
+            <li><a href="javascript:void(0);" onClick="sendSns('pint')" class="pinterest"><em
+                        class="blind">핀터레스트</em></a></li>
+            <li><a href="javascript:void(0);" onClick="sendSns('linkedin')" class="linkedin"><em
+                        class="blind">in</em></a></li>
+            <li><a href="javascript:void(0);" onClick="sendSns('google')" class="googleplus"><em
+                        class="blind">구글+</em></a></li>
+            <li><a href="javascript:void(0);" class="copylink"><em class="blind">링크복사</em></a></li>
+        </ul>
+        <div class="share_dim"></div>
+        <div class="copylink_pop">Copy Link Complete</div>
+    </div>
+    <a href="javascript:void(0);" class="exper_close"><em class="blind">닫기</em></a>
+    <script type="text/javascript" src="../js/lib/skrollr.min.js"></script>
+    <script>
+        $(".exper_close").click(function (event) {
+            parent.window.location.hash = '#experience';
+            return false;
+        });
+        $(document).keyup(function (e) {
+            if (e.keyCode == 27) { // escape key maps to keycode `27`
+                parent.window.location.hash = '#experience';
+            }
+        });
+        $(".shmore").click(function (event) {
+            $(".share_section").fadeIn("slow")
+            return false;
+        });
+        $(".share_dim").click(function (event) {
+            $(".share_section").fadeOut("fast")
+            return false;
+        });
+        $(".copylink").click(function (event) {
+            var a = $("<input>");
+            $("body").append(a);
+            a.val(parent.location.href).select();
+            document.execCommand("copy");
+            a.remove();
+            $(".copylink_pop").addClass("showp");
+            setTimeout(function () {
+                $(".copylink_pop").removeClass("showp")
+            }, 1E3)
+            return false;
+        });
+
+        var boxDone = false,
+            boxa = $('.kakao2_wrap .intro_wrap'),
+            boxb = $('.kakao2_wrap .landing_wrap .video'),
+            boxc = $('.kakao2_wrap .credit_wrap');
+        skrollr.init({
+            forceHeight: false,
+            render: function () {
+                if (boxa.hasClass('skrollable-between')) {
+                    if (!boxDone) {
+                        boxDone = true;
+                        boxa.find('video')[0].play();
+                    }
+                }
+                else if (boxb.hasClass('skrollable-between')) {
+                    if (!boxDone) {
+                        boxDone = true;
+                        boxb.find('video')[0].play();
+                    }
+                }
+                else if (boxc.hasClass('skrollable-between')) {
+                    if (!boxDone) {
+                        boxDone = true;
+                        boxc.find('video')[0].play();
+                    }
+                }
+                else {
+                    jQuery("video").each(function () {
+                        $(this)[0].pause();
+                    });
+                    boxDone = false;
+                }
+            }
+        });	
+    </script>
+</body>
+
+</html>
