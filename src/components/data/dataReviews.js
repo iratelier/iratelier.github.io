@@ -8,7 +8,7 @@ import React from "react";
 const DataReviews = [
   {
     childKey: 0,
-    image: "/resources/image/review/img_thumb_default.jpg",
+    image: "/iratelier.github.io/resources/image/review/img_thumb_default.jpg",
     header: "제목",
     meta: "날짜",
     description: "디스크립션",
@@ -18,7 +18,7 @@ const DataReviews = [
   },
   {
     childKey: 1,
-    image: "/resources/image/review/img_thumb_default.jpg",
+    image: "/iratelier.github.io/resources/image/review/img_thumb_default.jpg",
     header: "제목",
     meta: "날짜",
     description: "디스크립션",

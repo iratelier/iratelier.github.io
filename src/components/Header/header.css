@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/************************************************************************
+ * 파일명 : header.css
+ * 설명 : 공통
+ * 작성자 : miraclestudio JMR
+ * 작성일 : 2022.03.15
+ * 최종수정일 : 2022.03.15
+************************************************************************/
+
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  /* background: #f2f2f2; */
+}
+#header .ui.menu {
+  margin: 1rem;
+}
+#header .ui.menu .item {
+  color: #fff;
+  padding: 1rem;
+  font-size: 0.938rem;
+  letter-spacing: -0.05rem;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+#header .ui.menu .item.active {
+  color: #1fd2d9;
+  text-decoration: underline;
+}
+#header .ui.menu .item:hover {
+  color: #1fd2d9;
+  text-decoration: underline;
+}
+#header .ui.menu .item.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#header .btn-prev-arrow {
+  display: inline-block;
+  padding: 12px;
+}
+#header .btn-prev-arrow span {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(/src/assets/common/-g-ico-back-bk.svg) no-repeat;
+  text-indent: -9999px;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+#header #menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 13px 14px;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+#header #menu .hamburger {
+  display: inline-block;
+  vertical-align: middle;
+}
+#header #menu span {
+  display: block;
+  overflow: hidden;
+  width: 20px;
+  height: 2px;
+  background: #222;
+  margin: 4px auto;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+#header #menu.active span {
+  background: #fff;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+#header #menu.active span:nth-child(1) {
+  transform: translateY(6px) rotate(225deg);
+  transition-delay: 0.1s;
+}
+#header #menu.active span:nth-child(2) {
+  opacity: 0;
+}
+#header #menu.active span:nth-child(3) {
+  transform: translateY(-6px) rotate(-225deg);
+  transition-delay: 0.1s;
+}

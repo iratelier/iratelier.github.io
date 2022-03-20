@@ -9,7 +9,8 @@ import React from "react";
 const DataPlusa = [
   {
     childKey: 4007,
-    image: "/resources/image/thumbs/horizontal/img_thumb_acemaker.jpg",
+    image:
+      "/iratelier.github.io/resources/image/experience/thumbs/horizontal/img_thumb_acemaker.jpg",
     header: "[에이스메이커] 온라인브로셔 디자인 웹 사이트 운영/유지보수",
     meta: "- 퍼블리싱 20%",
     description: "- 웹 사이트 운영/유지보수\n- 온라인 브로셔 작성",
@@ -17,7 +18,8 @@ const DataPlusa = [
   },
   {
     childKey: 4006,
-    image: "/resources/image/thumbs/horizontal/img_thumb_etiqa.jpg",
+    image:
+      "/iratelier.github.io/resources/image/experience/thumbs/horizontal/img_thumb_etiqa.jpg",
     header: "[에티카] 웹 사이트 운영/유지보수",
     meta: "- 퍼블리싱 20%",
     description: "- 웹 사이트 운영/유지보수",
@@ -26,7 +28,7 @@ const DataPlusa = [
   // {
   //   childKey: 4005,
   //   image: {
-  //     src: "/resources/image/thumbs/horizontal/img_thumb_default.jpg",
+  //     src: "/iratelier.github.io/resources/image/experience/thumbs/horizontal/img_thumb_default.jpg",
   //   },
   //   header: "[가제-리바이프] 웹 사이트 구축(프론트) - 대외비",
   //   meta: "- 퍼블리싱 100%",
@@ -35,7 +37,8 @@ const DataPlusa = [
   // },
   {
     childKey: 4004,
-    image: "/resources/image/thumbs/horizontal/img_thumb_lu42.jpg",
+    image:
+      "/iratelier.github.io/resources/image/experience/thumbs/horizontal/img_thumb_lu42.jpg",
     header: "[Lu42] 웹 사이트 운영/유지보수",
     meta: "- 퍼블리싱 20%",
     description: "- 웹 사이트 운영/유지보수, 이벤트 프로모션",
@@ -43,7 +46,8 @@ const DataPlusa = [
   },
   {
     childKey: 4003,
-    image: "/resources/image/thumbs/horizontal/img_thumb_neker.jpg",
+    image:
+      "/iratelier.github.io/resources/image/experience/thumbs/horizontal/img_thumb_neker.jpg",
     header: "[네케르] 코스메틱브랜드 웹 사이트 구축(PC, 모바일)",
     meta: "- 퍼블리싱 70%",
     description: "- UI 구조 설계 및 퍼블리싱\n- 베이스 인터렉션 설계 및 구현",
@@ -51,7 +55,8 @@ const DataPlusa = [
   },
   {
     childKey: 4002,
-    image: "/resources/image/thumbs/horizontal/img_thumb_deeponde.jpg",
+    image:
+      "/iratelier.github.io/resources/image/experience/thumbs/horizontal/img_thumb_deeponde.jpg",
     header: "[디폰데] 코스메틱브랜드 웹 사이트 구축(PC, 모바일)",
     meta: "- 퍼블리싱 70%",
     description: "- UI 구조 설계 및 퍼블리싱\n- 베이스 인터렉션 설계 및 구현",
@@ -59,7 +64,8 @@ const DataPlusa = [
   },
   {
     childKey: 4001,
-    image: "/resources/image/thumbs/horizontal/img_thumb_wonjin.jpg",
+    image:
+      "/iratelier.github.io/resources/image/experience/thumbs/horizontal/img_thumb_wonjin.jpg",
     header: "[원진성형외과] 웹 사이트 리뉴얼(PC, 모바일)",
     meta: "- 퍼블리싱 70%",
     description: "- UI 구조 설계 및 퍼블리싱\n- 베이스 인터렉션 설계 및 구현",
