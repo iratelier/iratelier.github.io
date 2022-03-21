@@ -27,6 +27,7 @@
 }
 .lst-experience .ui.items > .item * {
   white-space: pre-line;
+  line-height: 1.5rem !important;
 }
 .lst-experience .ui.items > .item > .image + .content {
   margin-top: 10px;

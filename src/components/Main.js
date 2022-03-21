@@ -20,20 +20,35 @@ class Main extends Component {
         className="text-slate-500 dark:text-slate-400 bg-bg-slate-900 dark:bg-slate-900"
       >
         <Header />
-        <Routes>
-          <Route path="/">
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="blog" element={<Blog />} />
-            <Route path="review" element={<Review />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="experience" element={<Experience />} />
-          </Route>
-        </Routes>
-        <Outlet />
+        <Experience />
         <Footer />
       </div>
     );
   }
 }
 export default Main;
+
+// class Main extends Component {
+//   render() {
+//     return (
+//       <div
+//         id="wrap"
+//         className="text-slate-500 dark:text-slate-400 bg-bg-slate-900 dark:bg-slate-900"
+//       >
+//         <Header />
+//         <Routes>
+//           <Route path="/">
+//             <Route index element={<Home />} />
+//             <Route path="about" element={<About />} />
+//             <Route path="blog" element={<Blog />} />
+//             <Route path="review" element={<Review />} />
+//             <Route path="contact" element={<Contact />} />
+//             <Route path="experience" element={<Experience />} />
+//           </Route>
+//         </Routes>
+//         <Outlet />
+//         <Footer />
+//       </div>
+//     );
+//   }
+// }

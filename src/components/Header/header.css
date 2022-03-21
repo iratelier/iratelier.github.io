@@ -22,7 +22,7 @@
   margin: 1rem;
 }
 #header .ui.menu .item {
-  color: #fff;
+  /* color: #fff; */
   padding: 1rem;
   font-size: 0.938rem;
   letter-spacing: -0.05rem;
@@ -38,7 +38,7 @@
   text-decoration: underline;
 }
 #header .ui.menu .item.logo {
-  color: #fff;
+  /* color: #fff; */
   font-size: 1.5rem;
   font-weight: 600;
 }

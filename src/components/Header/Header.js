@@ -17,35 +17,35 @@ export default class Header extends Component {
       >
         <Menu text fixed>
           <Menu.Item
-            className="logo"
+            className="logo text-slate-500 dark:text-slate-400"
             name="miracleStudio"
             as={Link}
             to="/"
             active={activeItem === "home"}
             onClick={this.handleItemClick}
           />
-          <Menu.Menu position="right" className="nav">
-            {/* <Menu.Item
+          {/* <Menu.Menu position="right" className="nav">
+            <Menu.Item
               name="about"
               as={Link}
               to="about"
               active={activeItem === "about"}
               onClick={this.handleItemClick}
-            /> */}
-            {/* <Menu.Item
+            />
+            <Menu.Item
               name="blog"
               as={Link}
               to="blog"
               active={activeItem === "blog"}
               onClick={this.handleItemClick}
-            /> */}
-            {/* <Menu.Item
+            />
+            <Menu.Item
               name="review"
               as={Link}
               to="review"
               active={activeItem === "review"}
               onClick={this.handleItemClick}
-            /> */}
+            />
             <Menu.Item
               name="contact"
               as={Link}
@@ -60,7 +60,7 @@ export default class Header extends Component {
               active={activeItem === "experience"}
               onClick={this.handleItemClick}
             />
-          </Menu.Menu>
+          </Menu.Menu> */}
         </Menu>
       </header>
     );
