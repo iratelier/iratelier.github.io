@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.b40683a7.css",
-    "main.js": "/static/js/main.47cf91ea.js",
+    "main.css": "/static/css/main.744305e6.css",
+    "main.js": "/static/js/main.eccb2067.js",
     "static/js/787.4ffb59ae.chunk.js": "/static/js/787.4ffb59ae.chunk.js",
     "static/media/brand-icons.svg": "/static/media/brand-icons.6729d29753e000c17489.svg",
     "static/media/icons.svg": "/static/media/icons.62d9dae4e0040e81c980.svg",
+    "static/media/docs@tinypng.png": "/static/media/docs@tinypng.61f4d3334a6d245fc2297517c87ae044.61f4d3334a6d245fc229.png",
+    "static/media/docs-dark@tinypng.png": "/static/media/docs-dark@tinypng.a8984b7fb44a4f8232d04de50220ab31.a8984b7fb44a4f8232d0.png",
     "static/media/outline-icons.svg": "/static/media/outline-icons.9c4845b4b41ef40a22fa.svg",
     "static/media/icons.eot": "/static/media/icons.a01e3f2d6c83dc3aee17.eot",
     "static/media/icons.ttf": "/static/media/icons.c656b8caa454ed19b9a2.ttf",
@@ -22,12 +24,12 @@
     "static/media/outline-icons.woff2": "/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/index.html",
     "static/media/-g-ico-back-bk.svg": "/static/media/-g-ico-back-bk.a46a60c19edfb09eccdf.svg",
-    "main.b40683a7.css.map": "/static/css/main.b40683a7.css.map",
-    "main.47cf91ea.js.map": "/static/js/main.47cf91ea.js.map",
+    "main.744305e6.css.map": "/static/css/main.744305e6.css.map",
+    "main.eccb2067.js.map": "/static/js/main.eccb2067.js.map",
     "787.4ffb59ae.chunk.js.map": "/static/js/787.4ffb59ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b40683a7.css",
-    "static/js/main.47cf91ea.js"
+    "static/css/main.744305e6.css",
+    "static/js/main.eccb2067.js"
   ]
 }
