@@ -12,7 +12,10 @@
     margin-top: 13rem;
 }
 .lst-experience h3.txt-title {
+    margin-bottom: 1.5em;
+    color: var(--slate-900);
     font-size: 1.5rem;
+    font-weight: 600;
 }
 .lst-experience .ui.items > .item {
     margin: 2em 0;
@@ -25,6 +28,7 @@
 }
 .lst-experience .ui.items > .item > .content > .header {
     white-space: pre-line;
+    color: var(--slate-900);
 }
 .lst-experience .ui.items > .item * {
     white-space: pre-line;
@@ -35,12 +39,15 @@
 }
 .lst-experience .ui.items > .item .meta {
     margin: 1em 0;
+    color: var(--slate-600);
 }
 .lst-experience .ui.items > .item > .description {
     margin: 1em 0;
+    color: var(--slate-600);
 }
 .lst-experience .ui.items > .item .extra {
     margin: 1em 0;
+    color: var(--slate-400);
 }
 
 /* sm */

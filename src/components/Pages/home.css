@@ -8,7 +8,9 @@
  * 최종수정일 : 2022.03.15
 ************************************************************************/
 
-/* .home{background:#27c9ff} */
+.home.container {
+    margin-top: 0;
+}
 .home .row-text {
     font-size: 2rem;
 }
@@ -22,10 +24,12 @@
     align-items: center;
 }
 .home .title {
-    height: 100vh;
+    height: calc(100vh - 80px);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 60px;
+    font-size: 3.5rem;
     font-weight: bold;
+    text-align: center;
+    line-height: 130%;
 }
