@@ -9,7 +9,7 @@ function Header() {
 
     return (
         <>
-            <header id="header" className="stiky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 border-b border-slate-900/10 dark:border-slate-50/[0.06] bg-white/60 supports-backdrop-blur:bg-white/50 dark:bg-transparent">
+            <header id="header" className="fixed top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 border-b border-slate-900/10 dark:border-slate-50/[0.06] bg-white/60 supports-backdrop-blur:bg-white/50 dark:bg-transparent">
                 <nav className="navbar">
                     <div className="navbar-container">
                         {/* 모바일버전에서 클릭하면 메뉴 보이도록 설정하는 것도 한다. (close Mobile Menu)는 다시 버튼 누르면 없어지고 생기고 하도록 한다.  */}
