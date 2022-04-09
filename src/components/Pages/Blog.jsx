@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Item } from "semantic-ui-react";
-import "./layerframe.css";
+import "../css/layerframe.css";
 
 class LayerFrame2 extends React.Component {
     render() {

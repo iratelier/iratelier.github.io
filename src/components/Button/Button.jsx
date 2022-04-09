@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./button.css";
+import "../css/button.css";
 
-const STYLES = ["btn--primary", "btn--outline"];
+const STYLES = ["btn-primary", "btn-outline"];
 
-const SIZES = ["btn--medium", "btn--large"];
+const SIZES = ["btn-medium", "btn-large"];
 
 export const Button = ({ children, type, onClick, buttonStyle, buttonSize }) => {
     // buttonstyle이 따로 지정되지 않으면 가장 기본인 배열의 0번째가 설정된다.

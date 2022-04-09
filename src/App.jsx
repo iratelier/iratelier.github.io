@@ -9,7 +9,7 @@ import About from "./components/Pages/About";
 import Experience from "./components/Pages/Experience";
 import Contact from "./components/Pages/Contact";
 
-import "./components/Layout/layout.css";
+import "./components/css/layout.css";
 
 function App() {
     return (

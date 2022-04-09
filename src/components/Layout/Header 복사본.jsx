@@ -2,7 +2,7 @@ import React from "react";
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import { Menu } from "semantic-ui-react";
-import "./header.css";
+import "../css/header.css";
 
 export default class Header extends Component {
     state = {};

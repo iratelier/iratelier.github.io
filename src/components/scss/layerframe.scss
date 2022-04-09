@@ -1,18 +1,17 @@
 @charset "utf-8";
+@import "style";
 
 /************************************************************************
- * 파일명 : layer-iframe.css
+ * 파일명 : layeriframe.css
  * 설명 : 공통
  * 작성자 : miraclestudio JMR
  * 작성일 : 2022.03.15
  * 최종수정일 : 2022.03.15
 ************************************************************************/
+
 .layer-iframe {
-
-
-    background-color: #FFF;
+    background-color: $white;
 }
-
 
 .popup {
     position: fixed;
@@ -23,14 +22,15 @@
     right: 0;
     bottom: 0;
     margin: auto;
-    background-color: rgba(0,0,0, 0.5);
-  }
-  .popup_inner {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup_inner {
     position: absolute;
     left: 25%;
     right: 25%;
     top: 25%;
     bottom: 25%;
     margin: auto;
-    background: white;
-  }
+    background-color: $white;
+}

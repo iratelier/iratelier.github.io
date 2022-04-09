@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/************************************************************************
+ * 파일명 : experience.css
+ * 설명 : 공통
+ * 작성자 : miraclestudio JMR
+ * 작성일 : 2022.03.15
+ * 최종수정일 : 2022.03.15
+************************************************************************/
+.lst-experience + .lst-experience {
+  margin-top: 13rem;
+}
+
+.lst-experience h3.txt-title {
+  margin-bottom: 1.5em;
+  color: #0f172a;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.lst-experience .ui.items > .item {
+  margin: 2em 0;
+}
+
+.lst-experience .ui.items > .item > .image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+.lst-experience .ui.items > .item > .content > .header {
+  white-space: pre-line;
+  color: #075985;
+}
+
+.lst-experience .ui.items > .item * {
+  white-space: pre-line;
+  line-height: 1.5rem !important;
+}
+
+.lst-experience .ui.items > .item > .image + .content {
+  margin-top: 10px;
+}
+
+.lst-experience .ui.items > .item > .content > .description {
+  margin: 1em 0;
+  color: #1e293b;
+}
+
+.lst-experience .ui.items > .item > .content > .meta {
+  margin: 1em 0;
+  color: #1e293b;
+}
+
+.lst-experience .ui.items > .item .extra {
+  margin: 1em 0;
+  color: #1e293b;
+}
+
+/* sm */
+/* md */
+/* lg */
+/* xl */
