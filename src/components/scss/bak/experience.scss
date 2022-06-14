@@ -1,0 +1,86 @@
+@charset "utf-8";
+@import "style";
+
+/************************************************************************
+ * 파일명 : experience.css
+ * 설명 : 공통
+ * 작성자 : miraclestudio JMR
+ * 작성일 : 2022.03.15
+ * 최종수정일 : 2022.03.15
+************************************************************************/
+
+.lst-experience {
+    + .lst-experience {
+        margin-top: 13rem;
+    }
+
+    h3.txt-title {
+        margin-bottom: 1.5em;
+        color: $slate-900;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .ui.items > .item {
+        margin: 2em 0;
+
+        > {
+            .image img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                border: 1px solid rgba(15, 23, 42, 0.1);
+            }
+
+            .content > .header {
+                white-space: pre-line;
+                color: $sky-800;
+            }
+        }
+
+        * {
+            white-space: pre-line;
+            line-height: 1.5rem !important;
+        }
+
+        > .image + .content {
+            margin-top: 10px;
+        }
+
+        > .content > .description {
+            margin: 1em 0;
+            color: $slate-800;
+        }
+
+        > .content > .meta {
+            margin: 1em 0;
+            color: $slate-800;
+        }
+
+        .extra {
+            margin: 1em 0;
+            color: $slate-800;
+        }
+    }
+}
+
+/* sm */
+@media (min-width: 640px) {
+}
+
+@media only screen and (max-width: 767px) {
+    // .lst-experience.ui.items:not(.unstackable) > .item > .image {
+    // }
+}
+
+/* md */
+@media (min-width: 768px) {
+}
+
+/* lg */
+@media (min-width: 1024px) {
+}
+
+/* xl */
+@media (min-width: 1280px) {
+}

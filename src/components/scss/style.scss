@@ -8,15 +8,8 @@
 //  * 최종수정일 : 2022.04.06
 // ************************************************************************/
 
-$text: #000;
-$yellowgold1: #996a28;
-$yellowgold2: #e8b33c;
-$yellowgold3: #ffcc3e;
-$yellowgold4: #fbd365;
-$silver1: #64748b;
-$silver2: #696969;
-$silver3: #8d8d8d;
-$silver4: #e6e6e5;
+$text: rgb(15, 23, 42);
+$link: rgb(2, 132, 199);
 $inherit: inherit;
 $current: currentColor;
 $transparent: transparent;
@@ -253,3 +246,76 @@ $opacity-30: 0.3;
 $opacity-20: 0.2;
 $opacity-10: 0.1;
 $opacity-0: 0;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+.blind {
+    visibility: hidden;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.mximg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.h100 {
+    height: 100%;
+}
+.dimm {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+.flex-1 {
+    flex: 0 0 0%;
+}
+.flex-auto {
+    flex: 0 0 auto;
+}
+.flex-initial {
+    flex: 0 1 auto;
+}
+.flex-none {
+    flex: none;
+}
+a {
+    color: $link;
+    text-decoration: none;
+
+    &:hover {
+        color: $link;
+        text-decoration: none;
+    }
+}
+::-webkit-selection,
+::-moz-selection,
+::selection {
+    background-color: $link;
+    color: $white;
+}
+textarea::-webkit-selection,
+input::-webkit-selection,
+textarea::-moz-selection,
+input::-moz-selection,
+textarea::selection,
+input::selection {
+    background-color: $white;
+    color: $text;
+}

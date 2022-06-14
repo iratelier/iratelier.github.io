@@ -9,7 +9,7 @@ const Experience = () => {
         <>
             <Container id="container" className="experience">
                 <div className="container-wrap">
-                    <h2 className="txt-headline">Experience</h2>
+                    <h2 className="txt-headline">Experience Folio</h2>
                     <div className="contents-wrap">
                         <ExperienceList />
                     </div>
@@ -18,4 +18,5 @@ const Experience = () => {
         </>
     );
 };
+
 export default Experience;

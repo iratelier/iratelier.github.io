@@ -1,4 +1,81 @@
 @charset "UTF-8";
+.blind {
+  visibility: hidden;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.mximg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.dimm {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.flex-1 {
+  flex: 0 0 0%;
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.flex-initial {
+  flex: 0 1 auto;
+}
+
+.flex-none {
+  flex: none;
+}
+
+a {
+  color: #0284c7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0284c7;
+  text-decoration: none;
+}
+
+textarea::-webkit-selection,
+input::-webkit-selection,
+textarea::-moz-selection,
+input::-moz-selection,
+textarea::selection,
+input::selection {
+  background-color: white;
+  color: #0f172a;
+}
+
 /************************************************************************
  * 파일명 : layeriframe.css
  * 설명 : 공통
